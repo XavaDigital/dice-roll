@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "xavadigital/dice-roll",
+  "version": "0.1.0",
+  "title": "Dice Roll",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "A Gutenberg block for rolling dice to choose a random result",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "dice-roll",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": "file:./js/rolldice.js",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2"
+    },
+    "titleSize": {
+      "type": "string",
+      "default": "h2"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "rollMessage1": {
+      "type": "string",
+      "default": "<b>You rolled a 1!</b>"
+    },
+    "rollMessage2": {
+      "type": "string",
+      "default": "<b>You rolled a 2!</b>"
+    },
+    "rollMessage3": {
+      "type": "string",
+      "default": "<b>You rolled a 3!</b>"
+    },
+    "rollMessage4": {
+      "type": "string",
+      "default": "<b>You rolled a 4!</b>"
+    },
+    "rollMessage5": {
+      "type": "string",
+      "default": "<b>You rolled a 5!</b>"
+    },
+    "rollMessage6": {
+      "type": "string",
+      "default": "<b>You rolled a 6!</b>"
+    }
+  }
+}
